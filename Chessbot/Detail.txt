@@ -1,0 +1,15 @@
+﻿Detail:
+- Chạy chương trình chess.py, chọn màu quân cờ, bot à minimax => play
+- Minimax sử dụng maxdepth = 4;  hàm score_position dùng để tính giá trị của bàn cờ theo ma trận vị trí, khởi tạo alpha = -inf và beta = inf.
+-  Chương trình có hiển thị các nước đi hợp lệ, khi chọn nước đi hợp lệ thì quân cờ sẽ di chuyển, còn nếu chọn một ô cờ không trong nước đi hợp lệ thì không có gì xảy ra.
+- Khi bị chiếu tướng thì các nước đi hợp lệ sẽ bỏ bớt các nước đi, chỉ còn lại các nước đi giúp thoát chiếu tướng.
+-  Máy tính nước đi khá chậm, với max_depth = 4, thời gian tính toán trong khoảng >20s do không gian lớn và thuật toán chưa được tối ưu vi mô nên sử dụng rất nhiều phép toán
+- với max_depth = 2 thì đưa ra kết quả dưới 1s, max_depth = 3 thì khoảng 15s.
+- Chương trình có kiểm tra trạng thái kết thúc khi nước đi hợp lệ  = 0 và các trạng thái hòa khi còn 2 vua.
+- Chưa bổ sung luật cờ nhập thành giữa vua và xe: cả 2 chưa di chuyển, không có quân cờ ở giữa.
+Test case:
+- Check luật cờ, nước di hợp lệ:
+	Ví dụ: Quân mã: g1→f3: Thay đổi trạng thái bàn cờ, quân mã di chuyển đến ô f3
+		    g1 → f2: Nước đi không hợp lệ, không thay đổi trạng thái bàn cờ, vẫn giữ nguyên turn.
+
+
